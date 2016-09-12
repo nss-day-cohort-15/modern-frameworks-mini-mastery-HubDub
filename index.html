@@ -7,6 +7,10 @@
 </head>
 <body>
   <h1>Welcome to Flower Power!</h1>
+  <body ng-app="FlowerApp">
+    <div ng-controller="ListFlowersCtrl">
+    </div>
+  </body>
 
   <!-- third party libraries -->
   <script type="text/javascript" src="lib/bower_components/jquery/dist/jquery.min.js"></script>
@@ -20,7 +24,7 @@
   <script type="text/javascript" src="app/values/fb-creds.js"></script>
 
   <!-- controllers -->
-  <script type="text/javascript" src="/app/controllers/ListFlowersCtrl"></script>
+  <script type="text/javascript" src="/app/controllers/ListFlowersCtrl.js"></script>
   <!-- factories -->
   <script type="text/javascript" src="/app/factories/FlowerFactory.js"></script>
 </body>
