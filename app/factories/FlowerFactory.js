@@ -8,11 +8,8 @@ app.factory("FlowerFactory", ($q, $http, FirebaseURL) => {
     $http.get(`${FirebaseURL}arrangements.json`)
     .success((flowerObj) => {
       console.log(flowerObj);
-      // Object.keys(flowerObj).forEach((key) => {
-      //   flowerObj[key].id = key;
-      //   flowers.push(flowerObject[key]);
-      // });
-    resolve(flowersObj);
+
+    resolve(flowerObj);
     })
     .error((error) => {
       reject(error);
