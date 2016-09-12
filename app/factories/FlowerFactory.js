@@ -5,13 +5,14 @@ app.factory("FlowerFactory", ($q, $http, FirebaseURL) => {
   let getAllFlowers = () => {
   let flowers = [];
   return $q( (resolve, reject) => {
-    $http.get(`${FirebaseURL}flowers.json`)
+    $http.get(`${FirebaseURL}arrangements.json`)
     .success((flowerObj) => {
-      Object.keys(flowerObj).forEach((key) => {
-        flowerObj[key].id = key;
-        flowers.push(flowerObject[key]);
-      });
-    resolve(flowers);
+      console.log(flowerObj);
+      // Object.keys(flowerObj).forEach((key) => {
+      //   flowerObj[key].id = key;
+      //   flowers.push(flowerObject[key]);
+      // });
+    resolve(flowersObj);
     })
     .error((error) => {
       reject(error);
