@@ -1,5 +1,25 @@
-<h1>Flowers</h1>
-<div ng-repeat="flower in flowers">
+<h2>Flowers</h2>
+
+<!-- this one I tried the orderBy method -->
+<ul>
+  <div ng-repeat="flower in flowers | orderBy: 'category'">
+
+{{flower.category}}
+    <div class="panel panel-default">
+      <div class="panel-body">
+
+        <div>{{flower.title}}</div>
+        <!-- <div>{{flower.category}}</div> -->
+        <div>{{flower.description}}</div>
+        <div>{{flower.price}}</div>
+
+      </div>
+    </div>
+  </div>
+</ul>
+
+<!-- the one below populated the DOM but didn't separate them out into categories with a category header -->
+<!-- <div ng-repeat="flower in flowers">
   <div class="panel panel-default">
     <div class="panel-body">
 
@@ -10,4 +30,16 @@
 
     </div>
   </div>
-</div>
+</div> -->
+
+<!-- this one I think I just took totally down the wrong path -->
+<!-- <div ng-repeat="holiday in holidays">
+  <div class="panel panel-default">
+    <div class="panel-header">{{holiday.category}}</div>
+      <div class="panel-body">
+        <div>{{holiday.title}}</div>
+        <div>{{holiday.description}}</div>
+        <div>{{holiday.price}}</div>
+    </div>
+  </div>
+</div> -->

@@ -16,7 +16,7 @@ app.config(function($routeProvider){
             controller: "ListFlowersCtrl"
         }).
 
-        otherwise("/");
+        otherwise("/flowers");
 });
 
 

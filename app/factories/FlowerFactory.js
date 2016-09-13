@@ -3,7 +3,7 @@
 app.factory("FlowerFactory", ($q, $http, FirebaseURL) => {
 
   let getAllFlowers = () => {
-  let flowers = [];
+  // let flowers = [];
   return $q( (resolve, reject) => {
     $http.get(`${FirebaseURL}arrangements.json`)
     .success((flowerObj) => {
