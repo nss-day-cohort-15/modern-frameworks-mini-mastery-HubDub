@@ -1,22 +1,51 @@
 <h2>Flowers</h2>
 
-<!-- this one I tried the orderBy method -->
-<ul>
-  <div ng-repeat="flower in flowers | orderBy: 'category'">
 
-{{flower.category}}
-    <div class="panel panel-default">
-      <div class="panel-body">
 
-        <div>{{flower.title}}</div>
-        <!-- <div>{{flower.category}}</div> -->
-        <div>{{flower.description}}</div>
-        <div>{{flower.price}}</div>
-
+<h3>Holiday</h3>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div ng-repeat="flower in flowers">
+      <div ng-if="flower.category === 'holiday'">
+        <div class="col-sm-4 well flowerCard">
+          <div>Title: {{flower.title}}</div>
+          <div>Description: {{flower.description}}</div>
+          <div>Price: {{flower.price}}</div>
+        </div>
       </div>
     </div>
   </div>
-</ul>
+</div>
+<h3>Bereavement</h3>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div ng-repeat="flower in flowers">
+      <div ng-if="flower.category === 'bereavement'">
+        <div class="col-sm-4 well flowerCard">
+          <div>Title: {{flower.title}}</div>
+          <div>Description: {{flower.description}}</div>
+          <div>Price: {{flower.price}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<h3>Misc</h3>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div ng-repeat="flower in flowers">
+      <div ng-if="flower.category === 'misc'">
+        <div class="col-sm-4 well flowerCard">
+          <div>Title: {{flower.title}}</div>
+          <div>Description: {{flower.description}}</div>
+          <div>Price: {{flower.price}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <!-- the one below populated the DOM but didn't separate them out into categories with a category header -->
 <!-- <div ng-repeat="flower in flowers">

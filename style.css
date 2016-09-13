@@ -6,3 +6,12 @@ h1 {
 h2 {
   text-align: center;
 }
+
+.flowerCard {
+  min-height: 300px;
+}
+
+h3 {
+  text-align: center;
+  color: red;
+}

@@ -17,6 +17,8 @@ app.controller("ListFlowersCtrl", function ($scope, FlowerFactory, $routeParams,
           flowers.push(flowerObj[key]);
         }
         console.log(flowers);
+        //I'm starting to change stuff
+        $scope.ourGrouper = "category";
         $scope.flowers = flowers;
     });
 
