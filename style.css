@@ -1,0 +1,17 @@
+h1 {
+  color:blue;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.flowerCard {
+  min-height: 300px;
+}
+
+h3 {
+  text-align: center;
+  color: red;
+}
